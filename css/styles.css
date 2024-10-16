@@ -4,6 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* header start */
+
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -44,6 +46,8 @@ header {
   cursor: pointer;
 }
 
+/* header main part  */
+
 .header_main-content {
   display: flex;
   width: 859px;
@@ -57,7 +61,7 @@ header {
   height: 100%;
 }
 
-.header_nav  {
+.header_nav {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -121,7 +125,7 @@ header {
   cursor: pointer;
 }
 
-/* Main Section */
+/* Main Section of page  */
 .main-content {
   display: flex;
   column-gap: 45px;
@@ -182,17 +186,202 @@ h1 {
   margin-top: 22px;
 }
 
-.shopnow_div{
- margin-top: 22px;
- display: flex;
- gap: 8px;
+.shopnow_div {
+  margin-top: 22px;
+  display: flex;
+  gap: 8px;
 }
-.ShopNow2{
-font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: center;
-color: #FAFAFA;
+.ShopNow2 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #fafafa;
 }
 
+/* Sign Up Page */
+
+.main_section {
+  width: 552px;
+  height: 832px;
+  margin: 100px auto 0px auto;
+  border-radius: 32px;
+  padding: 30px 64px 10px 64px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title,
+.price {
+  color: #212628;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.title {
+  line-height: 48px;
+}
+
+.price_text {
+  font-size: 16px;
+}
+
+.form_text {
+  color: #212628;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.6;
+  text-align: left;
+}
+
+.signUp_inputs {
+  margin-top: 43px;
+}
+
+.input {
+  width: 100%;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 0px 54px 0px 24px;
+  outline: none;
+  margin-bottom: 27px;
+}
+
+.card_number {
+  background-image: url("../images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
+}
+
+.date_cvv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date_input {
+  width: 282px;
+}
+
+.input_CVV {
+  width: 120px;
+  padding: 0px 0px 0px 24px;
+}
+
+.country_zip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.country_selector {
+  width: 282px;
+  display: block;
+  appearance: none;
+  background-image: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 23px center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.terms_privacy_main {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.terms_privacy a {
+  color: #e1306c;
+  text-decoration: underline;
+}
+
+.submit_btn {
+  /* margin-top: 29px; */
+  margin: 29px auto;
+  width: 370px;
+  border: none;
+  height: 64px;
+  border-radius: 32px;
+  cursor: pointer;
+  background: linear-gradient(
+    to left,
+    #c23584 0%,
+    #e2306c 24%,
+    #f77736 84%,
+    #fa963e 100%
+  );
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.line_through_text {
+  color: #fff;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.checkbox_text {
+  display: flex;
+  gap: 20px;
+}
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox .checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #de2564;
+  border-radius: 4px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #ffffff;
+}
+
+.custom-checkbox input:checked + .checkmark:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #de2564;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.coupon {
+  width: 370px;
+  height: 64px;
+  top: 982px;
+  left: 775px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  color: #e1306c;
+}
