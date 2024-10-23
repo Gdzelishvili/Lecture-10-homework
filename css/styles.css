@@ -472,12 +472,14 @@ h1 {
   display: flex;
   gap: 30px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 270px;
 }
 
 .img_icons {
